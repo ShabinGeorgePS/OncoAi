@@ -1,0 +1,21 @@
+model/saved_models/*.h5
+model/saved_models/*.pb
+model/checkpoints/
+dataset/raw/
+dataset/processed/
+dataset/augmented/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
