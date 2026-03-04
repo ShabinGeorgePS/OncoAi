@@ -1,8 +1,3 @@
-"""
-app.py — ONCOAi Streamlit Web Application
-Team MediScope | Owner: Shabin George
-Run with: streamlit run app.py
-"""
 
 import streamlit as st
 from PIL import Image
@@ -56,8 +51,13 @@ if uploaded is not None:
         st.image(image, caption="Uploaded Image", use_column_width=True)
 
     with col2:
-        with st.spinner("🔍 Analyzing image..."):
+        with st.spinner("🔍 Analysing image..."):
             pred_class, confidence, all_probs = predict(image)
+
+        # all_probs values are already in percentage (0-100)
+        # Convert to 0.0-1.0 for display
+        cancer_prob    = all_probs.get('CANCER',     0.0) / 100.0
+        noncancer_prob = all_probs.get('NON CANCER', 0.0) / 100.0
 
         # ── Result card ───────────────────────────────────────────────────────
         if pred_class == 'CANCER':
@@ -85,13 +85,14 @@ if uploaded is not None:
         st.markdown("---")
         st.markdown("**Prediction Breakdown**")
 
-        cancer_prob    = all_probs[0] if len(all_probs) > 0 else 0.0
-        noncancer_prob = all_probs[1] if len(all_probs) > 1 else 0.0
-
-        st.progress(float(cancer_prob),
-                    text=f"CANCER: {cancer_prob*100:.1f}%")
-        st.progress(float(noncancer_prob),
-                    text=f"NON CANCER: {noncancer_prob*100:.1f}%")
+        st.progress(
+            float(cancer_prob),
+            text=f"CANCER: {cancer_prob * 100:.1f}%"
+        )
+        st.progress(
+            float(noncancer_prob),
+            text=f"NON CANCER: {noncancer_prob * 100:.1f}%"
+        )
 
     # ── Disclaimer ────────────────────────────────────────────────────────────
     st.divider()
@@ -113,25 +114,3 @@ else:
     with col3:
         st.markdown("**3️⃣ Result**\nGet prediction with confidence score")
 
-# ── Sidebar ───────────────────────────────────────────────────────────────────
-with st.sidebar:
-    st.markdown("### 🔬 ONCOAi")
-    st.markdown("**Team MediScope**")
-    st.markdown("""
-- Sasmita D — 727823TUCS305
-- Sedhupathi R — 727823TUCS308
-- Shabin George — 727823TUCS310
-    """)
-    st.markdown("---")
-    st.markdown("**Mentor:** Dr. Udhayamoorthi M")
-    st.markdown("---")
-    st.markdown("""
-**Model:** EfficientNetB0  
-**Transfer Learning:** ImageNet  
-**Input Size:** 224 × 224 px  
-**Classes:**
-- 🚨 CANCER
-- ✅ NON CANCER
-    """)
-    st.markdown("---")
-    st.markdown("*Review 1 — 05.03.2026*")
