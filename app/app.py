@@ -1,8 +1,3 @@
-"""
-app.py — ONCOAi Streamlit Web Application
-Team MediScope | Owner: Shabin George
-Run with: python -m streamlit run app.py
-"""
 
 import streamlit as st
 from PIL import Image
