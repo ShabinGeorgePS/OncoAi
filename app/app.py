@@ -9,12 +9,21 @@ warnings.filterwarnings('ignore')
 sys.path.append(os.path.dirname(__file__))
 from predictor import predict, get_model
 from gradcam import generate_gradcam
+from auth import show_auth_page, show_user_badge
 
 st.set_page_config(
     page_title="ONCOAi — Oral Cancer Detection",
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+# ── Auth gate — show login page if not logged in ──────────────────────────────
+if not show_auth_page():
+    st.stop()
+
+# Show user badge in sidebar
+show_user_badge()
+
 
 # ── SVG Icons ─────────────────────────────────────────────────────────────────
 ICONS = {
@@ -243,17 +252,15 @@ st.markdown("""
 .navbar {
     background: #ffffff;
     border-bottom: 1px solid #e2e8e6;
-    padding: 0.8rem 1.5rem;
+    padding: 1rem 2.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 -2.5rem 2rem -2.5rem;
-    flex-wrap: wrap;
-    gap: 0.5rem;
 }
 .navbar-brand  { display:flex; align-items:center; gap:0.6rem; }
 .navbar-title  { font-family:'DM Serif Display',serif; font-size:1.6rem; color:#1a6b5e; margin:0; }
-.navbar-sub    { font-size:0.78rem; color:#7a9e97; margin:0.2rem 0 0 0; font-weight:500; letter-spacing:0.03em; display:flex; align-items:center; gap:0.6rem; flex-wrap:wrap; }
+.navbar-sub    { font-size:0.78rem; color:#7a9e97; margin:0; font-weight:500; letter-spacing:0.03em; }
 .navbar-badge  {
     background:#e8f4f2; color:#1a6b5e; border:1px solid #b8dbd6;
     padding:0.3rem 0.9rem; border-radius:20px; font-size:0.75rem; font-weight:600;
@@ -410,14 +417,13 @@ st.markdown(f"""
         {icon("microscope")}
         <div>
             <p class="navbar-title">ONCOAi</p>
-            <p class="navbar-sub">
-                ORAL CANCER DETECTION SYSTEM &nbsp;&nbsp;
-                <span class="navbar-badge">MobileNetV2 &nbsp;·&nbsp; 92.4% Accuracy</span>
-            </p>
+            <p class="navbar-sub">ORAL CANCER DETECTION SYSTEM</p>
+            <p class="navbar-badge">MobileNetV2 &nbsp;·&nbsp; 92.4% Accuracy</p>
         </div>
     </div>
 </div>
 """, unsafe_allow_html=True)
+
 # ── Upload ────────────────────────────────────────────────────────────────────
 st.markdown(f"""
 <p style="font-size:0.82rem;color:#4a7a73;font-weight:600;
