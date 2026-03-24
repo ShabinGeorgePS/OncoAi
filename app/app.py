@@ -418,9 +418,9 @@ st.markdown(f"""
         <div>
             <p class="navbar-title">ONCOAi</p>
             <p class="navbar-sub">ORAL CANCER DETECTION SYSTEM</p>
+            <p class="navbar-badge">MobileNetV2 &nbsp;·&nbsp; 92.4% Accuracy</p>
         </div>
     </div>
-    <span class="navbar-badge">MobileNetV2 &nbsp;·&nbsp; 92.4% Accuracy</span>
 </div>
 """, unsafe_allow_html=True)
 
@@ -744,9 +744,6 @@ with st.sidebar:
 
     st.markdown('<hr class="sb-divider">', unsafe_allow_html=True)
     st.markdown(f"""
-    <div class="sb-row">{icon("calendar")}
-        <span class="sb-val">Review 2 — April 2026</span>
-    </div>
     <div class="sb-row">{icon("hospital")}
         <span class="sb-val">Dept. of CSE</span>
     </div>""", unsafe_allow_html=True)

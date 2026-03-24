@@ -2,9 +2,9 @@ import streamlit as st
 
 # ── Dummy credentials (replace with DB later) ─────────────────────────────────
 DUMMY_USERS = {
-    "admin@oncoai.com":   {"password": "admin123",   "role": "Admin",   "name": "Admin User"},
-    "doctor@oncoai.com":  {"password": "doctor123",  "role": "Doctor",  "name": "Dr. Udhayamoorthi M"},
-    "patient@oncoai.com": {"password": "patient123", "role": "Patient", "name": "John Patient"},
+    "admin@oncoai.com":   {"password": "admin123",   "role": "Admin",   "name": "Admin"},
+    "doctor@oncoai.com":  {"password": "doctor123",  "role": "Doctor",  "name": "Doctor"},
+    "patient@oncoai.com": {"password": "patient123", "role": "Patient", "name": "Patient"},
 }
 
 # ── Role colors and icons ──────────────────────────────────────────────────────
