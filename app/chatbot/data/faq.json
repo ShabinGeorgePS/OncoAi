@@ -1,0 +1,109 @@
+{
+  "faqs": [
+    {
+      "category": "About Oral Cancer",
+      "questions": [
+        {
+          "id": "what_is_oral_cancer",
+          "q": "What is oral cancer?",
+          "a": "Oral cancer is a malignant tumor that develops in the tissues of the mouth or throat. It can affect the lips, inner cheeks, gums, tongue, or deeper areas. Early detection significantly improves treatment outcomes."
+        },
+        {
+          "id": "how_common",
+          "q": "How common is oral cancer?",
+          "a": "Over 54,000 people are diagnosed with oral cancer annually in the US. However, early detection has improved survival rates from 50% to over 90% when caught in early stages."
+        },
+        {
+          "id": "early_detection_curable",
+          "q": "Is early detection oral cancer curable?",
+          "a": "Yes! When oral cancer is detected early (Stage 1-2), the 5-year survival rate is over 80-90%. This is why early detection through regular screenings is crucial."
+        },
+        {
+          "id": "survival_rates",
+          "q": "What are the survival rates?",
+          "a": "Stage 1: ~80-90% | Stage 2: ~70-80% | Stage 3: ~50-60% | Stage 4: ~20-40%. Early detection makes a critical difference!"
+        }
+      ]
+    },
+    {
+      "category": "Using ONCOAi",
+      "questions": [
+        {
+          "id": "how_accurate",
+          "q": "How accurate is ONCOAi?",
+          "a": "ONCOAi uses a deep learning model trained on thousands of oral images. While highly accurate (94%+ in testing), it's a screening tool - not a replacement for professional diagnosis. Always consult a doctor."
+        },
+        {
+          "id": "what_does_confidence_mean",
+          "q": "What does the confidence score mean?",
+          "a": "The confidence score (0-100%) indicates how certain the AI is about its prediction. Higher confidence means the model is more sure. A 95% CANCER confidence means high likelihood, but medical confirmation is essential."
+        },
+        {
+          "id": "false_positives",
+          "q": "Can ONCOAi give false results?",
+          "a": "Yes, like any diagnostic tool, false positives and false negatives are possible. The AI may flag benign conditions as concerning. Always consult a healthcare professional for confirmation."
+        },
+        {
+          "id": "image_quality",
+          "q": "What image quality is needed?",
+          "a": "Upload clear, well-lit photos of the affected area. Avoid blurry, dark, or heavily shadowed images. Multiple angles help improve accuracy."
+        },
+        {
+          "id": "privacy_data",
+          "q": "Is my data private and secure?",
+          "a": "Your uploaded images and data are handled securely per our privacy policy. We don't share personal data with third parties. Check our complete privacy policy for details."
+        }
+      ]
+    },
+    {
+      "category": "After Detection",
+      "questions": [
+        {
+          "id": "what_after_positive",
+          "q": "What should I do if ONCOAi shows CANCER?",
+          "a": "1) Don't panic - it requires medical confirmation\n2) Schedule an urgent appointment with an oral specialist or dentist\n3) Bring the image and ONCOAi result\n4) Get a professional biopsy if recommended\n5) Follow medical advice for further testing"
+        },
+        {
+          "id": "what_after_suspicious",
+          "q": "What if the result is SUSPICIOUS?",
+          "a": "Schedule an appointment with your dentist or doctor within 1-2 weeks. SUSPICIOUS means the AI detected features that warrant professional evaluation. It doesn't mean cancer, but professional confirmation is needed."
+        },
+        {
+          "id": "biopsy_process",
+          "q": "What is a biopsy and does it hurt?",
+          "a": "A biopsy is a tissue sample taken for microscopic examination - the gold standard for cancer diagnosis. Local anesthesia is used, so pain is minimal. Results take 1-2 weeks."
+        },
+        {
+          "id": "treatment_options",
+          "q": "What are oral cancer treatment options?",
+          "a": "Common treatments include: Surgery (tumor removal), Radiation therapy, Chemotherapy, or combination therapy. Treatment depends on cancer stage, type, and patient factors. Discuss with your oncologist."
+        }
+      ]
+    },
+    {
+      "category": "Prevention & Health",
+      "questions": [
+        {
+          "id": "prevent_oral_cancer",
+          "q": "How can I prevent oral cancer?",
+          "a": "✓ Quit tobacco (smoking, chewing)\n✓ Limit alcohol consumption\n✓ Maintain good oral hygiene\n✓ Use SPF lip balm outdoors\n✓ Eat a diet rich in fruits & vegetables\n✓ Get regular dental checkups\n✓ Avoid HPV infection (vaccination)"
+        },
+        {
+          "id": "hpv_vaccine",
+          "q": "Can HPV vaccine prevent oral cancer?",
+          "a": "Yes! HPV vaccination (Gardasil, Cervarix) prevents infection with high-risk HPV strains. It's most effective before sexual debut, but can benefit adults up to age 45. Consult your doctor."
+        },
+        {
+          "id": "regular_checkups",
+          "q": "How often should I get dental checkups?",
+          "a": "General recommendation: Every 6 months for routine check-ups. Higher-risk individuals should see a dentist every 3 months. Include oral cancer screening in your visits."
+        },
+        {
+          "id": "self_examination",
+          "q": "How do I do oral self-examination?",
+          "a": "Monthly check:\n1) Look in mirror under good light\n2) Check lips, inner cheeks, gums, tongue\n3) Feel for lumps or roughness\n4) Note any white/red patches\n5) Report changes to your dentist\nUse ONCOAi if you notice changes!"
+        }
+      ]
+    }
+  ]
+}
