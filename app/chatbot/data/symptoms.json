@@ -1,0 +1,129 @@
+{
+  "symptoms": [
+    {
+      "id": "persistent_ulcer",
+      "name": "Persistent Oral Ulcer",
+      "description": "A sore or ulcer in the mouth that doesn't heal within 2-3 weeks",
+      "warning_signs": [
+        "Ulcer lasts longer than 21 days",
+        "Ulcer bleeds easily",
+        "Ulcer is painful and enlarging",
+        "Red or white patches around the ulcer"
+      ],
+      "prevention": "Avoid tobacco and alcohol, maintain oral hygiene, avoid sharp foods"
+    },
+    {
+      "id": "white_red_patches",
+      "name": "White or Red Patches",
+      "description": "Unexplained white (leukoplakia) or red (erythroplakia) patches in the mouth",
+      "warning_signs": [
+        "Patches don't disappear after 2 weeks",
+        "Patches are painful or bleeding",
+        "Patches are growing or changing shape",
+        "Mixed red and white patches (speckled)"
+      ],
+      "prevention": "Regular oral self-examination, avoid tobacco, limit alcohol"
+    },
+    {
+      "id": "difficulty_swallowing",
+      "name": "Difficulty Swallowing",
+      "description": "Pain or difficulty (dysphagia) when swallowing food or saliva",
+      "warning_signs": [
+        "Persistent pain while swallowing",
+        "Sensation of lump in throat",
+        "Choking or gagging",
+        "Weight loss due to difficulty eating"
+      ],
+      "prevention": "Avoid very hot foods, chew food properly, stay hydrated"
+    },
+    {
+      "id": "mouth_pain",
+      "name": "Persistent Mouth Pain",
+      "description": "Chronic pain in the mouth area without clear cause",
+      "warning_signs": [
+        "Pain lasting more than 2 weeks",
+        "Pain radiating to ear or jaw",
+        "Pain not relieved by over-the-counter medications",
+        "Localized swelling"
+      ],
+      "prevention": "Avoid tobacco and alcohol, practice stress management"
+    },
+    {
+      "id": "swelling_lump",
+      "name": "Swelling or Lump",
+      "description": "Unexplained swelling, lump, or thickening in the mouth, tongue, or jaw",
+      "warning_signs": [
+        "Lump is hard and doesn't move",
+        "Lump is enlarging",
+        "Associated pain or numbness",
+        "Difficulty chewing or speaking"
+      ],
+      "prevention": "Regular self-examination, early detection of abnormalities"
+    },
+    {
+      "id": "jaw_problems",
+      "name": "Jaw Problems",
+      "description": "Difficulty opening mouth fully, jaw stiffness, or numbness",
+      "warning_signs": [
+        "Jaw locking or limited opening",
+        "Numbness in chin or lower lip",
+        "Pain when moving jaw",
+        "Asymmetrical facial appearance"
+      ],
+      "prevention": "Avoid excessive jaw clenching, manage stress"
+    }
+  ],
+  "risk_factors": [
+    {
+      "category": "Tobacco Use",
+      "details": "Smoking cigarettes, cigars, pipes, or chewing tobacco significantly increases risk",
+      "risk_level": "HIGH"
+    },
+    {
+      "category": "Alcohol Consumption",
+      "details": "Regular heavy alcohol use increases risk, especially combined with tobacco",
+      "risk_level": "HIGH"
+    },
+    {
+      "category": "Age",
+      "details": "Risk increases with age, most common in people 40+",
+      "risk_level": "MODERATE"
+    },
+    {
+      "category": "Human Papillomavirus (HPV)",
+      "details": "HPV infection, especially HPV-16, is a significant risk factor",
+      "risk_level": "HIGH"
+    },
+    {
+      "category": "Poor Oral Hygiene",
+      "details": "Neglecting dental care and oral health increases risk",
+      "risk_level": "MODERATE"
+    },
+    {
+      "category": "Prolonged Sun Exposure",
+      "details": "For lip cancer specifically, unprotected sun exposure is a risk factor",
+      "risk_level": "MODERATE"
+    },
+    {
+      "category": "Previous Cancer",
+      "details": "History of oral cancer or other cancers increases recurrence risk",
+      "risk_level": "HIGH"
+    },
+    {
+      "category": "Weakened Immune System",
+      "details": "Immunosuppression increases oral cancer risk",
+      "risk_level": "MODERATE"
+    }
+  ],
+  "when_to_see_doctor": [
+    "Any unexplained sore or ulcer lasting more than 2-3 weeks",
+    "White, red, or speckled patches that don't disappear",
+    "Recurring or persistent mouth pain",
+    "Difficulty or pain when swallowing",
+    "A lump or swelling that doesn't go away",
+    "Unexplained bleeding from mouth",
+    "Changes in voice or hoarseness lasting weeks",
+    "Numbness in mouth or tongue",
+    "Tooth loss without obvious cause"
+  ]
+}

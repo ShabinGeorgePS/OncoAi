@@ -1,0 +1,164 @@
+{
+  "guidance_workflows": {
+    "cancer_detected": {
+      "title": "⚠️ CANCER Detected - What to Do Next",
+      "severity": "HIGH",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Don't Panic",
+          "description": "This requires medical confirmation. ONCOAi is a screening tool, not a diagnostic tool.",
+          "action": "Take a moment to compose yourself"
+        },
+        {
+          "step": 2,
+          "title": "Schedule Urgent Appointment",
+          "description": "Contact an oral surgeon, maxillofacial surgeon, or ENT specialist as soon as possible (within 1-2 weeks)",
+          "action": "Call your dentist or doctor immediately for referral"
+        },
+        {
+          "step": 3,
+          "title": "Gather Documentation",
+          "description": "Prepare the image and ONCOAi result to show your doctor",
+          "action": "Bring the uploaded image and this result to your appointment"
+        },
+        {
+          "step": 4,
+          "title": "Professional Examination",
+          "description": "Doctor will perform visual examination and may use additional tools (endoscopy, ultrasound)",
+          "action": "Attend appointment and describe when you first noticed the lesion"
+        },
+        {
+          "step": 5,
+          "title": "Biopsy If Recommended",
+          "description": "Doctor may recommend a biopsy for definitive diagnosis (gold standard)",
+          "action": "Undergo biopsy if recommended - results take 1-2 weeks"
+        },
+        {
+          "step": 6,
+          "title": "Treatment Planning",
+          "description": "If confirmed, oncologist will discuss treatment options (surgery, radiation, chemotherapy)",
+          "action": "Follow medical team's recommendations"
+        }
+      ],
+      "red_flags": [
+        "Rapid growth of lesion",
+        "Bleeding or discharge",
+        "Severe pain",
+        "Difficulty eating or speaking",
+        "Facial swelling or numbness"
+      ],
+      "seek_emergency": "Go to ER if you experience severe bleeding, difficulty breathing, or choking"
+    },
+    "suspicious_detected": {
+      "title": "⚠️ SUSPICIOUS Result - What to Do Next",
+      "severity": "MEDIUM",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Don't Worry - Schedule Check",
+          "description": "SUSPICIOUS means the lesion has features that warrant professional evaluation. It doesn't mean cancer.",
+          "action": "Schedule appointment with dentist within 1-2 weeks"
+        },
+        {
+          "step": 2,
+          "title": "Document the Lesion",
+          "description": "Keep track of any changes: size, color, pain, bleeding",
+          "action": "Take notes and photos of changes (if any)"
+        },
+        {
+          "step": 3,
+          "title": "Professional Evaluation",
+          "description": "Dentist or doctor will examine and determine if further testing is needed",
+          "action": "Attend appointment with ONCOAi result"
+        },
+        {
+          "step": 4,
+          "title": "Follow Doctor's Advice",
+          "description": "Doctor may recommend: monitoring, biopsy, specialist referral, or treatment",
+          "action": "Follow medical recommendations"
+        },
+        {
+          "step": 5,
+          "title": "Regular Monitoring",
+          "description": "Even if benign, follow-up checks may be recommended",
+          "action": "Attend follow-up appointments as scheduled"
+        }
+      ],
+      "possible_causes": [
+        "Benign lesions (aphthous ulcers, lichen planus, candidiasis)",
+        "Early-stage oral cancer",
+        "Inflammatory conditions",
+        "Fungal or bacterial infections"
+      ],
+      "timeline": "1-2 weeks for appointment, 1-2 weeks for biopsy results if needed"
+    },
+    "non_cancer_detected": {
+      "title": "✅ NON-CANCER Result",
+      "severity": "LOW",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Good News!",
+          "description": "The AI indicates no cancer-like features detected in this lesion.",
+          "action": "You can relax, but continue preventive care"
+        },
+        {
+          "step": 2,
+          "title": "If Lesion Still Present",
+          "description": "If the ulcer/patch is still present, see dentist to determine cause (fungal, viral, bacterial, etc.)",
+          "action": "Schedule routine dental checkup"
+        },
+        {
+          "step": 3,
+          "title": "Prevention is Key",
+          "description": "Maintain healthy oral habits to prevent future issues",
+          "action": "Follow prevention tips: quit tobacco, limit alcohol, good hygiene"
+        },
+        {
+          "step": 4,
+          "title": "Regular Monitoring",
+          "description": "Continue self-examination and routine dental visits",
+          "action": "Monthly self-exam, dental checkup every 6 months"
+        },
+        {
+          "step": 5,
+          "title": "Seek Care If Changes",
+          "description": "If new symptoms develop or existing lesion worsens, get professional evaluation",
+          "action": "Don't ignore persistent symptoms - see dentist promptly"
+        }
+      ],
+      "next_steps": [
+        "Continue oral self-examination",
+        "Maintain oral hygiene",
+        "Schedule routine dental appointment",
+        "Implement preventive measures",
+        "Stay informed about oral health"
+      ]
+    }
+  },
+  "general_health_steps": {
+    "daily": [
+      "Brush teeth twice daily with fluoride toothpaste",
+      "Floss daily",
+      "Rinse with antiseptic mouthwash",
+      "Avoid tobacco and excessive alcohol"
+    ],
+    "weekly": [
+      "Self-examine mouth for changes",
+      "Check lips, tongue, inner cheeks, gums",
+      "Document any new or persistent lesions"
+    ],
+    "monthly": [
+      "Thorough oral self-examination",
+      "Look for white, red, or speckled patches",
+      "Check for lumps or swelling",
+      "Use ONCOAi if any concerning changes"
+    ],
+    "annually": [
+      "Professional dental cleaning and examination",
+      "Ask dentist for oral cancer screening",
+      "Discuss any risk factors"
+    ]
+  }
+}

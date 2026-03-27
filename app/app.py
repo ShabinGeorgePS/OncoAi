@@ -10,6 +10,7 @@ sys.path.append(os.path.dirname(__file__))
 from predictor import predict, get_model
 from gradcam import generate_gradcam
 from auth import show_auth_page, show_user_badge
+from chatbot import initialize_chatbot_session, render_simple_chat, render_quick_links
 
 st.set_page_config(
     page_title="ONCOAi — Oral Cancer Detection",
@@ -747,3 +748,26 @@ with st.sidebar:
     <div class="sb-row">{icon("hospital")}
         <span class="sb-val">Dept. of CSE</span>
     </div>""", unsafe_allow_html=True)
+
+# ── Chatbot Integration ──────────────────────────────────────────────────────
+initialize_chatbot_session()
+
+# Add chatbot section with divider
+st.markdown(f"""
+<div style="margin-top:3rem;padding-top:2rem;border-top:1px solid #e2e8e6;">
+</div>""", unsafe_allow_html=True)
+
+st.markdown(f"""
+<p style="font-size:0.7rem;font-weight:700;color:#7a9e97;
+letter-spacing:0.15em;text-transform:uppercase;margin:0.8rem 0;
+display:flex;align-items:center;gap:0.4rem;">
+    💬 Need Help? Ask Our AI Assistant
+</p>""", unsafe_allow_html=True)
+
+render_quick_links()
+
+st.markdown(f"""
+<div style="margin-top:2rem;"></div>""", unsafe_allow_html=True)
+
+with st.expander("💬 Chat with ONCOAi Assistant", expanded=False):
+    render_simple_chat()
